@@ -28,10 +28,6 @@ function BasicExample() {
                 Art Supplies
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Books</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Info" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">About Heikala</NavDropdown.Item>

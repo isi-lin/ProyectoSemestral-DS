@@ -1,6 +1,8 @@
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'react-bootstrap/Image'
-import imagen from '../1.png'
+import imagen1 from '../c1.jpg'
+import imagen2 from '../c2.jpeg'
+import imagen3 from '../c3.jpg'
 
 
 
@@ -11,39 +13,37 @@ function Carousel1() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=373940"
+          src={imagen1}
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>Unknown Orbit</h3>
+          <p>Painting for my first solo exhibition 'Out of this World'</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <Image
           className="d-block w-100"
-          src={imagen}
+          src={imagen2}
           alt="Second slide"
         />
-
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h3>Shikishi</h3>
+          <p>
+            New art book Shikishi available
+          </p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          height={300}
-          src="holder.js/800x400?text=Third slide&bg=20232a"
+          src={imagen3}
           alt="Third slide"
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+        <h3>Summer Night</h3>
+          <p>New print available. Inspired by Finnish Midsummer festivities</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
