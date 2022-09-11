@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import imagen_logo from '../logo.png'
+import { NavLink } from 'react-router-dom';
 
 function BasicExample() {
   return (
@@ -15,15 +16,15 @@ function BasicExample() {
               height="30"
               className="d-inline-block align-top"
             />{' '}
-        <Navbar.Brand href="#home">Heikala</Navbar.Brand>
+        <Navbar.Brand to="/Home" as={NavLink}>Heikala</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link to="/Home" as={NavLink}>Home</Nav.Link>
             <Nav.Link href="https://www.instagram.com/heikala/" target="_blank" rel="noopener noreferrer">Instagram</Nav.Link>
             <Nav.Link href="#link">Colaborations</Nav.Link>
             <NavDropdown title="Shop" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Prints</NavDropdown.Item>
+              <NavDropdown.Item to="/Prints" as={NavLink}>Prints</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Art Supplies
               </NavDropdown.Item>
