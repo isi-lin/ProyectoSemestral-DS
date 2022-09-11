@@ -16,11 +16,11 @@ function BasicExample() {
               height="30"
               className="d-inline-block align-top"
             />{' '}
-        <Navbar.Brand to="/Home" as={NavLink}>Heikala</Navbar.Brand>
+        <Navbar.Brand to="/" as={NavLink}>Heikala</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link to="/Home" as={NavLink}>Home</Nav.Link>
+            <Nav.Link to="/" as={NavLink}>Home</Nav.Link>
             <Nav.Link href="https://www.instagram.com/heikala/" target="_blank" rel="noopener noreferrer">Instagram</Nav.Link>
             <Nav.Link href="#link">Colaborations</Nav.Link>
             <NavDropdown title="Shop" id="basic-nav-dropdown">
