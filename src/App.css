@@ -46,3 +46,8 @@ p{
   color: white;
   font-family: 'Gill Sans';
 }
+a{
+  color: black;
+  font-family: 'Gill Sans';
+  font-size: 1.2rem;
+}
