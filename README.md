@@ -7,5 +7,5 @@ que no están presentes en su página.
 Como nuestra página web se creó mediante React, para poder abrir la página en el navegador, se necesita ejecutar el comando 'npm start' en la terminal.
 
 ## Integrantes:
-Isidora Lin Huang
-Yin Zhong Cai 
+- Isidora Lin Huang
+- Yin Zhong Cai 
