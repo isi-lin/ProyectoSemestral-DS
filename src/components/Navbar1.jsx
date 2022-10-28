@@ -25,10 +25,8 @@ function BasicExample() {
             <Nav.Link href="#link">Colaborations</Nav.Link>
             <NavDropdown title="Shop" id="basic-nav-dropdown">
               <NavDropdown.Item to="/Prints" as={NavLink}>Prints</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Art Supplies
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Books</NavDropdown.Item>
+              <NavDropdown.Item to="/ArtSupplies" as={NavLink}>Art Supplies</NavDropdown.Item>
+              <NavDropdown.Item to="/Books" as={NavLink}>Books</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Info" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">About Heikala</NavDropdown.Item>

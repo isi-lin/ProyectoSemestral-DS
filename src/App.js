@@ -7,6 +7,8 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import Prints from './components/Prints';
 import Cards1 from './components/Cards1';
+import ArtSupplies from './components/ArtSupplies';
+import Books1 from './components/Books1';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <Routes>
         <Route path='/' element={<><Carousel1/><br></br><Cards1/></>}/>
         <Route path='/print' element={<Prints />}/>
+        <Route path='/artsupplies' element={<ArtSupplies />}/>
+        <Route path='/books' element={<Books1 />}/>
       </Routes>
 
       
