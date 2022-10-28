@@ -22,15 +22,15 @@ function BasicExample() {
           <Nav className="me-auto">
             <Nav.Link to="/" as={NavLink}>Home</Nav.Link>
             <Nav.Link href="https://www.instagram.com/heikala/" target="_blank" rel="noopener noreferrer">Instagram</Nav.Link>
-            <Nav.Link href="#link">Colaborations</Nav.Link>
+            <Nav.Link to="/Colaborations" as={NavLink}>Colaborations</Nav.Link>
             <NavDropdown title="Shop" id="basic-nav-dropdown">
               <NavDropdown.Item to="/Prints" as={NavLink}>Prints</NavDropdown.Item>
               <NavDropdown.Item to="/ArtSupplies" as={NavLink}>Art Supplies</NavDropdown.Item>
               <NavDropdown.Item to="/Books" as={NavLink}>Books</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Info" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">About Heikala</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
+              <NavDropdown.Item to="/AboutHeikala" as={NavLink}>About Heikala</NavDropdown.Item>
+              <NavDropdown.Item to="/Shipping" as={NavLink}>
                 Shipping
               </NavDropdown.Item>
             </NavDropdown>
