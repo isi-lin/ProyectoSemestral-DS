@@ -4,7 +4,6 @@ import {
   MDBCardImage,
   MDBCardBody,
   MDBCardTitle,
-  MDBCardText,
   MDBCardGroup
 } from 'mdb-react-ui-kit';
 import imagencard1 from '../card1.jpg'
@@ -15,7 +14,8 @@ export default function Cards1() {
   return (
     <MDBCardGroup>
       <MDBCard>
-        <MDBCardImage src={imagencard1} alt='...' position='top' />
+        <MDBCardImage style={{padding: 45, alignSelf: 'flex-start'}}
+        src={imagencard1} alt='...' position='top'/>
         <MDBCardBody>
           <MDBCardTitle>Art Supply Boxes</MDBCardTitle><br></br>
           <a>
@@ -24,7 +24,8 @@ export default function Cards1() {
         </MDBCardBody>
       </MDBCard>
       <MDBCard>
-        <MDBCardImage src={imagencard2} alt='...' position='top' />
+        <MDBCardImage style={{padding: 45, alignSelf: 'flex-start'}}
+        src={imagencard2} alt='...' position='top' />
         <MDBCardBody>
           <MDBCardTitle>New Promotion</MDBCardTitle><br></br>
           <a>
@@ -34,7 +35,8 @@ export default function Cards1() {
       </MDBCard>
 
       <MDBCard>
-        <MDBCardImage src={imagencard3} alt='...' position='top' />
+        <MDBCardImage style={{padding: 45, alignSelf: 'flex-start'}}
+        src={imagencard3} alt='...' position='top' />
         <MDBCardBody>
           <MDBCardTitle>Stamp washi tapes</MDBCardTitle><br></br>
           <a>New stamp washi tapes are available in the shop! </a>
