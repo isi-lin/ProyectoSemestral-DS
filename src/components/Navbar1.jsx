@@ -29,7 +29,7 @@ function BasicExample() {
               <NavDropdown.Item to="/Books" as={NavLink}>Books</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Info" id="basic-nav-dropdown">
-              <NavDropdown.Item to="/AboutHeikala" as={NavLink}>About Heikala</NavDropdown.Item>
+              <NavDropdown.Item to="/AboutH" as={NavLink}>About Heikala</NavDropdown.Item>
               <NavDropdown.Item to="/Shipping" as={NavLink}>
                 Shipping
               </NavDropdown.Item>
