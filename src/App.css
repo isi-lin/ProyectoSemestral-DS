@@ -47,7 +47,7 @@ h2{
   font-size: 3rem;
 }
 p{
-  color: white;
+  color: black;
   font-family: 'Gill Sans';
 }
 a{
@@ -59,4 +59,9 @@ a{
   color: black;
   font-family: 'Gill Sans';
   font-size: 3rem;
+}
+
+.footercolor p{
+  color: black;
+  font-family: 'Gill Sans';
 }
