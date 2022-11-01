@@ -13,6 +13,7 @@ import Colaborations from './components/Colaborations';
 import AboutH from './components/AboutH';
 import Shipping from './components/Shipping';
 import HomeCard1 from './components/HomeCard1';
+import Footer1 from './components/Footer1';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path='/abouth' element={<AboutH />}/>
         <Route path='/shipping' element={<Shipping />}/>
       </Routes>
+      <Footer1></Footer1>
 
       
       
