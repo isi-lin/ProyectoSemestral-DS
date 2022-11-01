@@ -9,11 +9,14 @@ import Prints from './components/Prints';
 import Cards1 from './components/Cards1';
 import ArtSupplies from './components/ArtSupplies';
 import Books1 from './components/Books1';
-import Colaborations from './components/Colaborations';
+import Cards2 from './components/Colaborations';
 import AboutH from './components/AboutH';
 import Shipping from './components/Shipping';
 import HomeCard1 from './components/HomeCard1';
 import Footer1 from './components/Footer1';
+import Colabcard1 from './components/Colabcard1';
+
+
 
 function App() {
   return (
@@ -24,7 +27,7 @@ function App() {
         <Route path='/print' element={<Prints />}/>
         <Route path='/artsupplies' element={<ArtSupplies />}/>
         <Route path='/books' element={<Books1 />}/>
-        <Route path='/colaborations' element={<Colaborations />}/>
+        <Route path='/colaborations' element={<><Colabcard1/><br></br><Cards2/></>}/>
         <Route path='/abouth' element={<AboutH />}/>
         <Route path='/shipping' element={<Shipping />}/>
       </Routes>

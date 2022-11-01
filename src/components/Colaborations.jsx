@@ -9,8 +9,9 @@ import {
 import imagencollab1 from '../imagencollab1.jpeg'
 import imagencollab2 from '../imagencollab2.jpeg'
 import imagencollab3 from '../imagencollab3.jpeg'
+import Card from 'react-bootstrap/Card';
 
-export default function Cards1() {
+export default function Cards2() {
   return (
     <MDBCardGroup>
       <MDBCard>
@@ -45,5 +46,6 @@ export default function Cards1() {
         </MDBCardBody>
       </MDBCard>
     </MDBCardGroup>
+    
   );
 }

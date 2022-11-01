@@ -7,7 +7,8 @@ function HeaderAndFooterExample() {
     <Card className="text-center">
       <Card.Body>
         <h2>¡Welcome!</h2>
-        <a>This page is dedicated to Heikala's illustrations works.</a>
+        <a>This page is dedicated to Heikala's art and illustrations!</a><br></br>
+        <a>Here you can find information about Heikala, her art, colaborations and support her by checking out the available products in the shop.</a>
       </Card.Body>
     </Card>
   );
