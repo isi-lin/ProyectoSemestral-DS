@@ -14,7 +14,7 @@ export default function Footer1() {
               </h6>
               <div class='footercolor'>
                 <a>
-                Thank you for visiting the webside! Please contact us for any information you need.
+                Thank you for visiting the website! Please contact us if you need any information.
                 </a>
               </div>
             </MDBCol>
