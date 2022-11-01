@@ -17,7 +17,7 @@ function HeaderAndFooterExample() {
          <a>
           Hello, I am an artist and illustrator from Finland. I like to use traditional mediums of ink and watercolor to create my art. I attend various conventions locally and around the world. You can find my prints, art books and more in those conventions or in my online shop.
         </a><br></br><br></br>
-        <Button variant="primary">Visit my Instagram!</Button>
+        <Button href="https://www.instagram.com/heikala/" target="_blank" rel="noopener noreferrer">Visit my Instagram!</Button>
       </Card.Body>
     </Card>
   );
