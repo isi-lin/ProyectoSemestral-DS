@@ -12,13 +12,14 @@ import Books1 from './components/Books1';
 import Colaborations from './components/Colaborations';
 import AboutH from './components/AboutH';
 import Shipping from './components/Shipping';
+import HomeCard1 from './components/HomeCard1';
 
 function App() {
   return (
     <div className="App">
       <BasicExample></BasicExample>
       <Routes>
-        <Route path='/' element={<><Carousel1/><br></br><Cards1/></>}/>
+        <Route path='/' element={<><Carousel1/><br></br><HomeCard1></HomeCard1><Cards1/></>}/>
         <Route path='/print' element={<Prints />}/>
         <Route path='/artsupplies' element={<ArtSupplies />}/>
         <Route path='/books' element={<Books1 />}/>

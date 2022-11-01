@@ -40,9 +40,12 @@ h3{
   color: white;
   font-family: 'Gill Sans';
   font-size: 100px;
-  
 }
-
+h2{
+  color: black;
+  font-family: 'Gill Sans';
+  font-size: 3rem;
+}
 p{
   color: white;
   font-family: 'Gill Sans';
@@ -51,4 +54,9 @@ a{
   color: black;
   font-family: 'Gill Sans';
   font-size: 1.2rem;
+}
+.b{
+  color: black;
+  font-family: 'Gill Sans';
+  font-size: 3rem;
 }
