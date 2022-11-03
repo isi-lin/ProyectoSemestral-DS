@@ -24,7 +24,7 @@ function App() {
       <BasicExample></BasicExample>
       <Routes>
         <Route path='/' element={<><Carousel1/><br></br><HomeCard1></HomeCard1><Cards1/></>}/>
-        <Route path='/print' element={<Prints />}/>
+        <Route path='/prints' element={<Prints />}/>
         <Route path='/artsupplies' element={<ArtSupplies />}/>
         <Route path='/books' element={<Books1 />}/>
         <Route path='/colaborations' element={<><Colabcard1/><br></br><Cards2/></>}/>
