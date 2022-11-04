@@ -1,4 +1,4 @@
-import { Card } from "react-bootstrap"
+import { Card, Button } from "react-bootstrap"
 import React from "react"
 
 type AsuppliesItemsProps = {
@@ -9,6 +9,7 @@ type AsuppliesItemsProps = {
 }
 
 export function ArtSuppliesItem({ id, name, price, img }: AsuppliesItemsProps) {
+    const quantify = 0
     return <Card className="h-100">
 
         <Card.Img
@@ -18,13 +19,19 @@ export function ArtSuppliesItem({ id, name, price, img }: AsuppliesItemsProps) {
         style={{ objectFit: "cover" }}
         />
 
-        <Card.Body className="d-flex flex column">
-            <Card.Title className="d-flex justify-content-space-between align-items-baseline mb-4">
+        <Card.Body style={{alignContent: 'cover'}}>
+            <Card.Title className="d-flex justify-content-between align-items-baseline mb-4">
                 <span className="fs-2">{name}</span>
                 <span className="ms-2 text-muted">{price}</span>
 
             </Card.Title>
-            <div className="mt-auto"></div>
+            <div className="mt-auto">
+                {quantify === 0 ? (
+                    <Button className="w-100">
+                        + Add to cart
+                    </Button>
+                ): null}
+            </div>   
 
         </Card.Body>
 
