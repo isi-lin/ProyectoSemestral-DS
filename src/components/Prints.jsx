@@ -7,6 +7,7 @@ import { PrintsItems } from "./PrintsItems.tsx"
 export default function Prints(){
     return (
         <>
+        <h3>Books</h3>
         <Row md={2} xs={1} lg={3} className="g-3">
             {printsItems.map(itemsprints => (
                 <Col key={itemsprints.id}>
