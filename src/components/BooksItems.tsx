@@ -1,14 +1,14 @@
 import { Card } from "react-bootstrap"
 import React from "react"
 
-type PrintsItemsProps = {
+type BooksItemsProps = {
     id: number
     name: string
     price: number
     img: string
 }
 
-export function PrintsItems({ id, name, price, img }: PrintsItemsProps) {
+export function BooksItems({ id, name, price, img }: BooksItemsProps) {
     return <Card className="h-100">
 
         <Card.Img
@@ -19,8 +19,11 @@ export function PrintsItems({ id, name, price, img }: PrintsItemsProps) {
         />
 
         <Card.Body className="d-flex flex column">
-            <Card.Title className="d-flex justify-content-space-between align-items-baseline mb-4">
-                <span className="fs-2'">{name}</span>
+            <Card.Title className="d-flex
+            justify-content-space-between
+            align-items-baseline
+            mb-4">
+                <span className="fs-2">{name}</span>
                 <span className="ms-2 text-muted">{price}</span>
 
             </Card.Title>
@@ -29,4 +32,4 @@ export function PrintsItems({ id, name, price, img }: PrintsItemsProps) {
         </Card.Body>
 
     </Card>
- } 
+ }  
