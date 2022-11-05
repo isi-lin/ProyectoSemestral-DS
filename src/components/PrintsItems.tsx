@@ -1,5 +1,6 @@
 import { Card, Button } from "react-bootstrap"
 import React from "react"
+import { useShoppingCart } from "../ShoppingCartContext"
 
 type PrintsItemsProps = {
     id: number
@@ -9,7 +10,14 @@ type PrintsItemsProps = {
 }
 
 export function PrintsItems({ id, name, price, img }: PrintsItemsProps) {
-    const quantify = 0
+    const { 
+        getItemQuantity, 
+        increaseCartQuantity, 
+        decreaseCartQuantity, 
+        removeFromCart, 
+    } = useShoppingCart()
+    const quantify = getItemQuantity(id)
+
     return <Card className="h-100">
 
         <Card.Img
@@ -25,16 +33,16 @@ export function PrintsItems({ id, name, price, img }: PrintsItemsProps) {
             </Card.Title>
             <div className="mt-auto">
                 {quantify === 0 ? (
-                    <Button variant="outline-primary" className="w-100">
+                    <Button variant="outline-primary" className="w-100" onClick = {() => increaseCartQuantity(id)}>
                         + Add to cart
                     </Button>
                 ): <div className="d-flex align-items-center flex-column" style={{gap:".5rem"}}>
                     <div className="d-flex align-items-center justify-content-center" style={{gap:".5rem"}}>
-                        <Button variant="outline-primary">-</Button>
+                        <Button variant="outline-primary" onClick = {() => decreaseCartQuantity(id)}>-</Button>
                         <span className="itemsincart">{quantify}</span> in cart
-                        <Button variant="outline-primary">+</Button>
+                        <Button variant="outline-primary" onClick = {() => increaseCartQuantity(id)}>+</Button>
                     </div>
-                    <Button variant="outline-danger" size="sm">Remove</Button>
+                    <Button onClick = {() => removeFromCart(id)} variant="outline-danger" size="sm">Remove</Button>
                     </div>}
             </div>    
 
