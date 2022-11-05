@@ -14,7 +14,8 @@ export default function Prints(){
         <a>Many prints designed and made by Heikala</a><br></br>
       </Card.Body>
     </Card>
-    <h2>prints</h2>
+    <br></br>
+    <br></br>
         <Row md={2} xs={1} lg={3} className="g-3">
             {printsItems.map(itemsprints => (
                 <Col key={itemsprints.id}>

@@ -14,7 +14,8 @@ export default function Books1(){
         <a>Heikala's art now available in books</a><br></br>
       </Card.Body>
     </Card>
-        <h3>Books</h3>
+    <br></br>
+    <br></br>
         <Row md={2} xs={1} lg={3} className="g-3">
             {booksItems.map(itemsbooks => (
                 <Col key={itemsbooks.id}>
