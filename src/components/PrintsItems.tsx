@@ -31,7 +31,7 @@ export function PrintsItems({ id, name, price, img }: PrintsItemsProps) {
                 ): <div className="d-flex align-items-center flex-column" style={{gap:".5rem"}}>
                     <div className="d-flex align-items-center justify-content-center" style={{gap:".5rem"}}>
                         <Button variant="outline-primary">-</Button>
-                        <span className="fs-3">{quantify}</span> in cart
+                        <span className="itemsincart">{quantify}</span> in cart
                         <Button variant="outline-primary">+</Button>
                     </div>
                     <Button variant="outline-danger" size="sm">Remove</Button>

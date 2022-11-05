@@ -1,5 +1,6 @@
 import React from 'react';
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
+import { NavLink } from 'react-router-dom';
 
 export default function Footer1() {
   return (
@@ -24,18 +25,18 @@ export default function Footer1() {
 
               <h6 className='text-uppercase fw-bold mb-4'>Shop</h6>
               
-                <a href='#!' className='text-reset'>
+                <a href="/Prints" as={NavLink} className='text-reset'>
                   Prints
                 </a>
               
               <div className='footercolor'>
-                <a href='#!' className='text-reset'>
+                <a href="/ArtSupplies" as={NavLink} className='text-reset'>
                   Art Supplies
                 </a>
               </div>
 
               <div className='footercolor'>
-                <a href='#!' className='text-reset'>
+                <a href="/Books" as={NavLink} className='text-reset'>
                   Books
                 </a>
               </div>
@@ -45,12 +46,12 @@ export default function Footer1() {
             <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Information</h6>
               <div className='footercolor'>
-                <a href='#!' className='text-reset'>
+                <a href="/AboutH" as={NavLink} className='text-reset'>
                   About Heikala
                 </a>
               </div>
               <div className='footercolor'>
-                <a href='#!' className='text-reset'>
+                <a href="/Shipping" as={NavLink} className='text-reset'>
                   Shipping
                 </a>
               </div>
