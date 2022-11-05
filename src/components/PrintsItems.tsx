@@ -1,6 +1,7 @@
 import { Card, Button } from "react-bootstrap"
 import React from "react"
-import { useShoppingCart } from "../ShoppingCartContext"
+import { useShoppingCart } from "./ShoppingCartContext.tsx"
+
 
 type PrintsItemsProps = {
     id: number

@@ -15,12 +15,14 @@ import Shipping from './components/Shipping';
 import HomeCard1 from './components/HomeCard1';
 import Footer1 from './components/Footer1';
 import Colabcard1 from './components/Colabcard1';
+import { ShoppingCartProvider } from './components/ShoppingCartContext.tsx';
 
 
 
 function App() {
   return (
     <div className="App">
+      <ShoppingCartProvider>
       <BasicExample></BasicExample>
       <Routes>
         <Route path='/' element={<><Carousel1/><br></br><HomeCard1></HomeCard1><Cards1/></>}/>
@@ -32,6 +34,7 @@ function App() {
         <Route path='/shipping' element={<Shipping />}/>
       </Routes>
       <Footer1></Footer1>
+      </ShoppingCartProvider>
 
       
       
