@@ -1,11 +1,18 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { Col, Row } from "react-bootstrap"
-import booksItems from "../itemsbooks.json"
 import { BooksItems } from "./BooksItems.tsx"
 import Card from 'react-bootstrap/Card';
 
-
 export default function Books1(){
+    const [storeItems, setItems] = useState([]);
+    useEffect(()=> {
+        fetch('https://ptsyppiurfzybmv.form.io/itemsbooks/submission')
+        .then(response => response.json())
+        .then(data => {
+            setItems(data);
+        })
+    }, [])
+
     return (
         <>
         <Card className="text-center">
@@ -17,7 +24,7 @@ export default function Books1(){
     <br></br>
     <br></br>
         <Row md={2} xs={1} lg={3} className="g-3">
-            {booksItems.map(itemsbooks => (
+            {storeItems.map(itemsbooks => (
                 <Col key={itemsbooks.id}>
                 <BooksItems {...itemsbooks["data"]}/>
                 </Col>

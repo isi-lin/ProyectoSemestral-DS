@@ -1,7 +1,6 @@
 import { useShoppingCart } from "./ShoppingCartContext.tsx"
-import artsuppliesItems from "../itemsartsupplies.json"
 import { Stack } from "react-bootstrap"
-import React from 'react'
+import React, { useEffect, useState } from "react"
 import { Button } from "react-bootstrap"
 
 
@@ -12,8 +11,16 @@ type CartItemProps = {
 }
 
 export function CartItem2 ({id, quantity}: CartItemProps) {
+    const [storeItems, setItems] = useState([]);
+    useEffect(()=> {
+        fetch('https://ptsyppiurfzybmv.form.io/itemsartsupplies/submission')
+        .then(response => response.json())
+        .then(data => {
+            setItems(data);
+        })
+    }, [])
     const { removeFromCart} = useShoppingCart()
-    const item = artsuppliesItems.find( i => i.data.id === id)
+    const item = storeItems.find( i => i.data.id === id)
     if (item == null) return null
 
     return (

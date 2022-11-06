@@ -1,11 +1,17 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { Col, Row } from "react-bootstrap"
-import printsItems from "../itemsprints.json"
 import { PrintsItems } from "./PrintsItems.tsx"
 import Card from 'react-bootstrap/Card';
 
-
 export default function Prints(){
+    const [storeItems, setItems] = useState([]);
+    useEffect(()=> {
+        fetch('https://ptsyppiurfzybmv.form.io/itemsprints/submission')
+        .then(response => response.json())
+        .then(data => {
+            setItems(data);
+        })
+    }, [])
     return (
         <>
         <Card className="text-center">
@@ -17,7 +23,7 @@ export default function Prints(){
     <br></br>
     <br></br>
         <Row md={2} xs={1} lg={3} className="g-3">
-            {printsItems.map(itemsprints => (
+            {storeItems.map(itemsprints => (
                 <Col key={itemsprints.id}>
                 <PrintsItems {...itemsprints["data"]}/>
                 </Col>
