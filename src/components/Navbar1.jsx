@@ -5,9 +5,11 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import imagen_logo from '../logo.png'
 import { NavLink } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
+import { useShoppingCart } from './ShoppingCartContext.tsx';
 
 
 function BasicExample() {
+  const {openCart, cartQuantity} = useShoppingCart()
   return (
     <Navbar sticky="top" bg="light" expand="lg">
       <Container>
@@ -38,7 +40,8 @@ function BasicExample() {
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
-        <Button style= {{width: "3rem", height: "3rem", position:"relative"}} variant= "outline-secondary" classname="rounded-circle" >
+        {cartQuantity > 0 && (
+        <Button onClick={openCart} style= {{width: "3rem", height: "3rem", position:"relative"}} variant= "outline-secondary" classname="rounded-circle" >
         <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 576 512"
@@ -57,9 +60,10 @@ function BasicExample() {
                 right: 0,
                 transform: "translate(25%, 25%)",
               }}
-            >2
+            > {cartQuantity}
             </div>
         </Button>
+        )}
       </Container>
     </Navbar>
   );
