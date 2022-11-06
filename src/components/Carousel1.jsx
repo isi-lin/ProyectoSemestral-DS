@@ -14,10 +14,6 @@ function Carousel1() {
           src={imagen1}
           alt="First slide"
         />
-        <Carousel.Caption>
-          <h3>Unknown Orbit</h3>
-          <p>Painting for my first solo exhibition 'Out of this World'</p>
-        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <Image
@@ -25,12 +21,6 @@ function Carousel1() {
           src={imagen2}
           alt="Second slide"
         />
-        <Carousel.Caption>
-        <h3>Shikishi</h3>
-          <p>
-            New art book Shikishi available
-          </p>
-        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
@@ -38,11 +28,6 @@ function Carousel1() {
           src={imagen3}
           alt="Third slide"
         />
-
-        <Carousel.Caption>
-        <h3>Summer Night</h3>
-          <p>New print available. Inspired by Finnish Midsummer festivities</p>
-        </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
   );
