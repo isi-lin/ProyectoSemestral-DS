@@ -33,7 +33,7 @@ export function BooksItems({ id, name, price, img }: BooksItemsProps) {
             align-items-baseline
             mb-4">
                 <span className="tituloitems">{name}</span>
-                <span className="ms-2 text-muted">${price}</span>
+                <span className="ms-2 text-muted">USD${price}</span>
 
             </Card.Title>
             <div className="mt-auto">

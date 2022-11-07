@@ -30,7 +30,7 @@ export function ArtSuppliesItem({ id, name, price, img }: AsuppliesItemsProps) {
         <Card.Body className="d-flex flex-column">
             <Card.Title className="d-flex justify-content-between align-items-baseline mb-4">
                 <span className="tituloitems">{name}</span>
-                <span className="ms-2 text-muted">${price}</span>
+                <span className="ms-2 text-muted">USD${price}</span>
 
             </Card.Title>
             <div className="mt-auto">
