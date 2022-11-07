@@ -38,8 +38,8 @@ export default function Cards1() {
         <MDBCardImage style={{padding: 45, alignSelf: 'flex-start'}}
         src={imagencard3} alt='...' position='top' />
         <MDBCardBody>
-          <MDBCardTitle>Stamp washi tapes</MDBCardTitle><br></br>
-          <a>New stamp washi tapes are available in the shop! </a>
+          <MDBCardTitle>Stamp washi tapes</MDBCardTitle><br></br> 
+          <a>Stamp washi tapes coming soon in the shop! </a>
         </MDBCardBody>
       </MDBCard>
     </MDBCardGroup>
